@@ -8,6 +8,12 @@
       <input type="text" v-model="text">
       <p>{{ text }}</p>
     </div>
+    <hr>
+    <ul>
+      <li v-for="item in items">
+        {{ item.name }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -16,7 +22,12 @@
     data () {
       return {
         title: 'Foo',
-        text: ''
+        text: '',
+        items: [
+          { name: '一郎' },
+          { name: '次郎' },
+          { name: '三郎' }
+        ]
       }
     },
     methods: {
