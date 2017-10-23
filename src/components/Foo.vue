@@ -3,8 +3,11 @@
     <h1>{{ title }}</h1>
     <button v-on:click="changeTitle">Change</button>
     <hr>
-    <input type="text" v-model="text">
-    <p>{{ text }}</p>
+    <div v-if="title === 'Bar'">
+      <!-- this.title が 'Bar' になったら出力 -->
+      <input type="text" v-model="text">
+      <p>{{ text }}</p>
+    </div>
   </div>
 </template>
 
