@@ -1,9 +1,18 @@
 <template>
-  <h1>Foo</h1>
+  <div>
+    <h1>{{ title }}</h1>
+    <button v-on:click="changeTitle">Change</button>
+  </div>
 </template>
 
 <script>
-  console.log('foo')
+  export default {
+    data () {
+      return {
+        title: 'Foo'
+      }
+    }
+  }
 </script>
 
 <style scoped lang="scss">
