@@ -2,6 +2,9 @@
   <div>
     <h1>{{ title }}</h1>
     <button v-on:click="changeTitle">Change</button>
+    <hr>
+    <input type="text" v-model="text">
+    <p>{{ text }}</p>
   </div>
 </template>
 
@@ -9,7 +12,8 @@
   export default {
     data () {
       return {
-        title: 'Foo'
+        title: 'Foo',
+        text: ''
       }
     },
     methods: {
