@@ -11,6 +11,11 @@
       return {
         title: 'Foo'
       }
+    },
+    methods: {
+      changeTitle () {
+        this.title = 'Bar'
+      }
     }
   }
 </script>
